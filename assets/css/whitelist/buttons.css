@@ -1,0 +1,17 @@
+/* Add to Custom Button */
+
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+  @apply
+  bg-color2
+  py-3
+  px-12
+  opacity-100;
+  transition: 300ms ease-in-out opacity
+}
+
+.gform_wrapper .gform_footer input.button:hover, .gform_wrapper .gform_footer input[type=submit]:hover {
+
+  @apply
+  opacity-75
+
+}

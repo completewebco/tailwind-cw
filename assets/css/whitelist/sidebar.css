@@ -1,0 +1,48 @@
+/* Sidebar */
+.sidebar .widget ul {
+  list-style-type:none;
+  @apply pl-0
+}
+
+.sidebar .widget ul li{
+  position:relative;
+  padding:10px 0;
+  line-height:1.1;
+  transition:300ms left ease-in-out;
+  left:0;
+}
+
+.sidebar .widget ul li:hover {
+  left:5px;
+}
+
+.sidebar .widget ul li a{
+  line-height:1.1;
+  @apply
+  text-color1
+}
+
+.sidebar .widget ul li:after {
+  content:"";
+  height:1px;
+  bottom:-5px;
+  @apply
+  block
+  absolute
+  w-16
+  bg-color2
+  left-0;
+}
+
+.sidebar .widget ul li:last-child:after {
+  display:none;
+}
+
+.sidebar h3 {
+  @apply
+  border-b-4
+  border-color1
+  pb-4
+  mr-12
+}
+

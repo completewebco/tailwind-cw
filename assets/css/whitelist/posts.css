@@ -1,0 +1,172 @@
+/* Lists */
+.typeset ul {
+  margin:20px 0;
+  list-style-type: disc;
+  @apply
+  pl-5
+  leading-relaxed
+}
+
+.typeset ul li {
+  @apply
+  py-1
+}
+
+ ol {
+  list-style-type: decimal;
+}
+
+p > strong, strong {
+  font-weight:900;
+}
+
+ p,  p a {
+  @apply
+  text-lg
+  leading-relaxed
+}
+
+/* Headers */
+ h1 {
+  @apply 
+  text-gray-800
+  text-5xl
+  leading-tight
+  pt-2
+  pb-3
+  font-medium
+}
+
+ h2 {
+  @apply 
+  text-gray-800
+  text-4xl
+  leading-tight
+  pt-2
+  pb-3
+  font-medium
+}
+
+ h3 {
+  @apply 
+  text-gray-800
+  text-3xl
+  leading-tight
+  pt-2
+  pb-3
+  font-medium
+
+}
+
+ h4 {
+  @apply 
+  text-gray-800
+  text-2xl
+  leading-tight
+
+}
+
+ h5 {
+  @apply
+  text-black
+  text-xl
+}
+
+
+
+/* Spacing */
+ p,  p + p,  p + ul,  p + ol,  p + blockquote,  p + div,  p + table,
+ ul + p,  ul + ul,  ul + ol,  ul + blockquote,  ul + div,  ul + table,
+ ol + p,  ol + ul,  ol + ol,  ol + blockquote,  ol + div,  ol + table,
+ blockquote + p,  blockquote + ul,  blockquote + ol,  blockquote + blockquote,  blockquote + div,  blockquote + table,
+ div + p,  div + ul,  div + ol,  div + blockquote,  div + table,
+ iframe + p,  iframe + ul,  iframe + ol,  iframe + blockquote,  iframe + table,
+ table + p,  table + ul,  table + ol,  table + blockquote {
+margin-bottom:1.5rem;
+}
+
+
+ table {
+  width: 100%;
+margin-bottom: 15px;
+border-collapse: collapse;
+border-spacing: 0;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+
+ table td {
+  border-color: rgba(0,0,0,.08);
+}
+
+ table th,  table td {
+    padding: 10px;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    vertical-align: middle;
+}
+
+ table tr:first-child td {
+  background: 0 0;
+}
+
+ table tr:nth-child(2n) td {
+  background: rgba(0,0,0,0.01);
+}
+
+/* Pagenation Links */
+
+.nav-links {
+  @apply
+  flex
+  items-center
+}
+
+.nav-links a {
+  @apply
+  text-2xl
+  mx-1
+  p-1
+}
+
+.nav-links span {
+  @apply
+  mx-1
+  bg-color1
+  text-white
+  text-2xl
+  flex
+  items-center
+  justify-center
+  w-8
+  h-8
+  p-1
+  rounded-full
+}
+
+.nav-links .next, .nav-links .prev {
+  @apply
+  text-xl
+}
+
+.nav-links .next:hover, .nav-links .prev:hover {
+  @apply
+  underline
+}
+
+/* Featured Image */
+
+.subheader__image img {
+  @apply
+  w-full
+  h-full
+  object-cover
+}
+
+/* Blog */
+.blog-cards {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}

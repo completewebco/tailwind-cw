@@ -1,0 +1,114 @@
+/* Footer */
+.footer {
+  @apply
+  text-center
+}
+
+.footer a {
+  @apply
+  text-white
+}
+
+.widget_media_image img {
+  @apply
+  pb-6
+}
+
+.footer .social-media-icons {
+  @apply
+  mt-4
+}
+
+.footer .widget .widget-title{
+  @apply
+  font-base 
+  text-2xl 
+  text-white
+  font-bold  
+  pb-2
+  pb-1 
+  pr-6 
+  inline-block 
+  mb-4
+} 
+
+.footer .contact p, .footer .contact p a {
+  @apply
+  text-sm
+}
+
+.footer-branding p {
+  @apply
+  text-xs
+}
+
+footer .social-media-icons a:hover svg path{
+  transition:300ms fill ease-in-out;
+}
+
+footer .social-media-icons a svg path{
+  fill: #fff;
+}
+
+footer .social-media-icons a:hover svg path{
+  fill: #FDE825;
+}
+
+
+.footer .menu li a {
+  @apply
+  text-gray-200
+  text-base
+  leading-tight
+  block
+  py-1
+  ;
+}
+
+.footer .menu li a:hover {
+  @apply
+  underline;
+}
+
+.footer .contact a, .footer .contact, .footer .contact p {
+  @apply
+  text-gray-200
+}
+
+/* Search Box Widget */
+
+.footer .search input {
+  @apply
+  bg-transparent
+  border-2
+  border-white
+  mb-0
+}
+
+.footer .search label {
+@apply
+mr-2
+}
+
+.footer .search form {
+  @apply
+  flex
+}
+
+.footer .search input::placeholder {
+  @apply
+  text-white;
+}
+
+.footer .search .search-submit {
+  @apply
+  text-white
+  px-2
+}
+
+.footer .search .search-submit:hover {
+  @apply
+  bg-white
+  text-color1;
+  cursor:pointer;
+}

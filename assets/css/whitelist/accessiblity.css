@@ -1,0 +1,24 @@
+/* Need to add to custom accessiblity */
+.hide {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
+  .show {
+    width: auto;
+    height: auto;
+    position: inherit;
+    overflow: visible;
+    clip: auto;
+  }
+  
+  .screen-reader-text {
+    width: 1px!important;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }

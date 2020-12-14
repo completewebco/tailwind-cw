@@ -1,0 +1,154 @@
+/* Global Header Nav */
+header nav ul {margin-left:0;padding-left:0;}
+
+header nav li {
+    list-style-type: none;
+    line-height:1;
+    @apply
+    flex
+    mx-1
+    items-center;
+}
+
+header nav li a {
+    @apply
+    text-sm
+    font-normal
+    text-color3
+    uppercase
+    px-3
+    py-4
+    block
+    text-center;
+}  
+
+header nav li:hover a {
+    @apply
+    underline}
+
+header nav li.phone a {
+    @apply
+    text-black
+    font-bold
+    text-lg
+    flex
+    items-center
+}
+
+/* Dropdowns - Mega Menu */
+header nav li.menu-item-has-children a {
+    @apply
+    relative;
+}
+
+.main-navigation > .menu-main-menu-container > ul > li > a{
+    @apply
+    relative;
+}
+
+/* Underline Animation */
+.main-navigation > .menu-main-menu-container > ul > li > a:after {
+    content:" ";
+    height:2px;
+    transition:600ms ease-in-out width;
+    @apply
+    block
+    absolute
+    bottom-0
+    left-0
+    w-0
+    bg-white
+}
+
+.main-navigation > .menu-main-menu-container > ul > li:hover > a:after {
+    @apply
+    w-full
+}
+
+header > div > div > nav > .menu-main-menu-container > ul > li.menu-item-has-children:hover > a:after  {
+    @apply
+    opacity-100
+    visible;
+}
+
+header nav li {
+    @apply
+    relative;
+}
+
+header nav li ul.sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    transition:600ms; 
+    top:96%;
+    width:260px;
+    @apply 
+    absolute 
+    bg-white 
+    z-30 
+    left-0 
+    py-4 
+    shadow-md;
+}
+
+header nav li ul.sub-menu:after {
+    position: absolute;
+    opacity: 1;
+    content: "";
+    top: -11px;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid #fff;
+}
+
+header nav li ul.sub-menu a {
+transition: 0ms color ease-in-out;
+font-weight:300;
+@apply 
+text-gray-800
+pl-4
+pr-3
+py-1
+leading-normal
+block
+text-sm
+normal-case;
+}
+
+header nav li ul.sub-menu a:hover {
+    @apply
+    text-color1
+    underline
+}
+
+header nav li:hover ul.sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Sticky Header */
+.sticky-header {
+    transform: translate(0, -140%);
+    transition:430ms transform ease-in-out;
+}
+
+
+/* CTA Link */
+
+.cta-nav-list a {
+    @apply
+    bg-color1
+    py-2
+    font-thin
+    text-base
+    rounded
+
+}
+
+.cta-nav-list a:hover {
+    @apply
+    opacity-75
+}
